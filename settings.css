@@ -1,0 +1,109 @@
+.settingsScreen {
+    position: relative;
+    box-shadow: 0px 0px 50px -5px rgba(255, 255, 255, .25) inset;
+
+    min-width: 250px;
+    width: 380px;
+    max-width: 556px;
+    
+    min-height: 556px;
+    height: 650px;
+    max-height: 680px;
+
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    gap: 15px;
+
+    padding: 0px 0px;
+}
+
+.settingsOptions {
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+
+    width: 100%;
+}
+
+.settingsOptions a {
+    padding: 20px 5px;
+
+    text-decoration: none;
+    background: rgba(0,0,0, 50%);
+    color: #fff;
+}
+
+.settingsOptions a:hover {
+    border-left: 1px outset #fff;;
+}
+
+.settingsOptions a:active {
+    border-left: 1px inset #fff;
+}
+
+
+
+/* BACKGROUND IMAGES */
+
+.bgChangeScreen {
+    position: relative;
+    box-shadow: 0px 0px 50px -5px rgba(255, 255, 255, .25) inset;
+
+    min-width: 250px;
+    width: 380px;
+    max-width: 556px;
+    
+    min-height: 556px;
+    height: 650px;
+    max-height: 680px;
+
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 15px;
+
+    padding: 20px 15px 15px 15px;
+}
+.btnCloseBgChange {
+    font-size: .7rem;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    
+    display: flex;
+    align-items: center;
+}
+.btnCloseBgChange img {
+    width: 20px;
+    padding: 0 10px 0 0;
+}
+
+.bgImgs {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.bgImgs a {
+    margin: 0 6px;
+}
+
+.bgImgs a img {
+    width: 100px;
+    height: 180px;
+
+    border: 1px ridge #FFF;
+}
