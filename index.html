@@ -2,104 +2,173 @@
 <html lang="pt-BR">
 
 <head>
-    <meta name="viewport" content="width=device-width">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="gmail.css">
-    <link rel="stylesheet" href="settings.css">
-    <title>Teste</title>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Teste</title>
 </head>
 
 <body>
-    <div class="celular">
-        <div class="cellTop"></div>
-        <div class="cellScreen">
-            <div class="notBar" id="notBar" onload="watchTime()">
-                <div class="watchTime" id="txt"></div>
-                <div class="battery" id="battery"></div>
-            </div>
-            <div class="firstScreen background" id="firstScreen">
-                <div class="cellApp">
-                    <a href="wa.me/+5521998323783" target="_blank" draggable="false"><img src="./icons/whatsapp.png"
-                            alt="Icone App do Whatsapp" draggable="false"></a>
-                    <span id="app">Whatsapp</span>
-                </div>
-                <div class="cellApp">
-                    <a href="#FacebookApplication" target="_blank" draggable="false" onclick="openFacebook()"><img
-                            src="./icons/facebook.png" alt="Icone App do Facebook" draggable="false"></a>
-                    <span id="app">Facebook</span>
-                </div>
-                <div class="cellApp">
-                    <a href="#InstagramApplication" target="_blank" draggable="false" onclick="openInstagram()"><img
-                            src="./icons/instagram.png" alt="Icone App do Instagram" draggable="false"></a>
-                    <span id="app">Instagram</span>
-                </div>
-                <div class="cellApp">
-                    <a href="#GmailApplication" draggable="false" onclick="openGmail()"><img src="./icons/gmail.png"
-                            alt="Icone App do Gmail" id="gmailImg" draggable="false"></a>
-                    <span id="app">Gmail</span>
-                </div>
-                <div class="cellApp">
-                    <a href="#LinkedinApplication" target="_blank" draggable="false" onclick="openLinkedin()"><img
-                            src="./icons/linkedin.png" alt="Icone App do LinkedIn" draggable="false"></a>
-                    <span id="app">LinkedIn</span>
-                </div>
-                <div class="cellApp">
-                    <a href="#settingsApplication" draggable="false" onclick="openSettings()"><img
-                            src="./icons/settings.png" alt="Icone App dos Ajustes" draggable="false"></a>
-                    <span id="app">Ajustes</span>
-                </div>
-            </div>
+        <div class="celular">
+                <div class="cellTop"></div>
+                <div class="cellScreen">
+                        <!-- NOTIFICATION BAR -->
+                        <div class="notBar" id="notBar" onload="watchTime()">
+                                <div class="watchTime" id="txt"></div>
+                                <div class="battery" id="battery"></div>
+                        </div>
 
-            <!-- GMAIL SCREEN -->
-            <div class="gmailScreen" id="gmailScreen">
-                <header>
-                    <a href="#"><img src="icons/menu.png" alt=""></a>
-                    <p>Enviar mensagem</p>
-                </header>
-                <div class="gmailBody">
-                    <form action="">
-                        <input class="formMail" type="text" placeholder="De:">
-                        <input class="formMail" type="text" value="Para: raphaaelj@gmail.com" disabled>
-                        <input class="formMail" type="text" placeholder="Assunto:">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem..."></textarea>
-                        <a href="#" class="btn-send" id="btn-send-email" onclick="sendMail()">Enviar</a>
-                    </form>
-                </div>
-            </div>
-            <!-- END GMAIL SCREEN -->
+                        <!-- MAIN SCREEN -->
+                        <div class="firstScreen background" id="firstScreen">
+                                <div class="cellApp">
+                                        <a href="https://www.wa.me/+5521998323783" target="_blank"
+                                                draggable="false"><img src="./icons/whatsapp.png"
+                                                        alt="Icone App do Whatsapp" draggable="false"></a>
+                                        <p id="app">Whatsapp</p>
+                                </div>
+                                <div class="cellApp">
+                                        <a href="#AboutMe" target="_blank" draggable="false"
+                                                onclick="openAboutMe()"><img src="./icons/user.png" id="aboutMeImg"
+                                                        alt="Icone App Sobre Mim" draggable="false"></a>
+                                        <p id="app">Sobre Mim</p>
+                                </div>
+                                <div class="cellApp">
+                                        <a href="#Projects" draggable="false" onclick="openProjects()"><img
+                                                        src="./icons/coordinator.png" alt="Icone App dos meus Projetos"
+                                                        draggable="false"></a>
+                                        <p id="app">Projetos</p>
+                                </div>
+                                <div class="cellApp">
+                                        <a href="#GmailApplication" draggable="false" onclick="openGmail()"><img
+                                                        src="./icons/gmail.png" alt="Icone App do Gmail" id="gmailImg"
+                                                        draggable="false"></a>
+                                        <p id="app">Gmail</p>
+                                </div>
+                                <div class="cellApp">
+                                        <a href="https://www.linkedin.com/in/raphael-oliveira-97722b222/"
+                                                target="_blank" draggable="false" onclick="openLinkedin()"><img
+                                                        src="./icons/linkedin.png" alt="Icone App do LinkedIn"
+                                                        draggable="false"></a>
+                                        <p id="app">LinkedIn</p>
+                                </div>
+                                <div class="cellApp">
+                                        <a href="https://www.github.com/raphaaelj" target="_blank"
+                                                draggable="false"><img src="./icons/github.png" id="githubImg"
+                                                        alt="Icone App do Github" draggable="false"></a>
+                                        <p id="app">Github</p>
+                                </div>
+                                <div class="cellApp">
+                                        <a href="#settingsApplication" draggable="false" onclick="openSettings()"><img
+                                                        src="./icons/settings.png" alt="Icone App dos Ajustes"
+                                                        draggable="false"></a>
+                                        <p id="app">Ajustes</p>
+                                </div>
+                        </div>
 
-            <!-- SETTINGS SCREEN -->
-            <div class="settingsScreen background" id="settingsScreen">
-                <ul class="settingsOptions">
-                    <a href="#ChangeBackground" class="sChangeBg" onclick="openBgChange()">Planos de Fundo</a>
-                    <a href="#AudioSettings" class="sAudio">Áudio</a>
-                </ul>
-            </div>
-            <div class="bgChangeScreen background" id="bgChangeScreen">
-                    <a href="#" onclick="closeBgChange()" class="btnCloseBgChange">
-                        <img src="icons/close.png" alt="">
-                        <span>Voltar</span>
-                    </a>
-                <div class="bgImgs">
-                    <a href="#" onclick="bgOne()"><img src="images/bg-cellphone-1.jpg" class="changeBgOpt" id="bgImg1"
-                            alt=""></a>
-                    <a href="#" onclick="bgTwo()"><img src="images/bg-cellphone-2.jpg" class="changeBgOpt" id="bgImg2"
-                            alt=""></a>
-                    <a href="#" onclick="bgThree()"><img src="images/bg-cellphone-3.jpg" class="changeBgOpt" id="bgImg3"
-                            alt=""></a>
-                    <a href="#" onclick="bgFour()"><img src="images/bg-cellphone-4.jpg" class="changeBgOpt" id="bgImg4"
-                            alt=""></a>
-                    <a href="#" onclick="bgFive()"><img src="images/bg-cellphone-5.jpg" class="changeBgOpt" id="bgImg5"
-                            alt=""></a>
-                </div>
-            </div>
-            <!-- END SETTINGS SCREEN -->
+                        <!-- GMAIL SCREEN -->
+                        <div class="gmailScreen" id="gmailScreen">
+                                <header>
+                                        <a href="#"><img src="icons/menu.png" alt=""></a>
+                                        <p>Enviar mensagem</p>
+                                </header>
+                                <div class="gmailBody">
+                                        <form action="mailto:raphaaelj.contato@gmail.com" method="POST"
+                                                enctype="multipart/form-data" name="gmailForm">
+                                                <input class="formMail" type="text" placeholder="De:">
+                                                <input class="formMail" type="text"
+                                                        value="Para: raphaaelj.contato@gmail.com" disabled>
+                                                <input class="formMail" type="text" placeholder="Assunto:">
+                                                <textarea name="" id="" cols="30" rows="10"
+                                                        placeholder="Mensagem..."></textarea>
+                                                <button type="submit" value="Submit" class="btn-send"
+                                                        id="btn-send-email" onclick="sendMail()">Enviar</button>
+                                        </form>
+                                </div>
+                        </div>
 
+                        <!-- SETTINGS SCREEN -->
+                        <div class="settingsScreen" id="settingsScreen">
+                                <ul class="settingsOptions">
+                                        <a href="#ChangeBackground" class="sChangeBg" onclick="openBgChange()">Planos de
+                                                Fundo</a>
+                                        <a href="#AudioSettings" class="sAudio">Áudio</a>
+                                </ul>
+                        </div>
+                        <div class="bgChangeScreen background" id="bgChangeScreen">
+                                <a href="#" onclick="closeBgChange()" class="btnCloseBgChange">
+                                        <img src="icons/left-arrow.png" alt="">
+                                        <span>Voltar</span>
+                                </a>
+                                <div class="bgImgs">
+                                        <a href="#" onclick="bgOne()"><img src="images/bg-cellphone-1.jpg"
+                                                        class="changeBgOpt" id="bgImg1" alt=""></a>
+                                        <a href="#" onclick="bgTwo()"><img src="images/bg-cellphone-2.jpg"
+                                                        class="changeBgOpt" id="bgImg2" alt=""></a>
+                                        <a href="#" onclick="bgThree()"><img src="images/bg-cellphone-3.jpg"
+                                                        class="changeBgOpt" id="bgImg3" alt=""></a>
+                                        <a href="#" onclick="bgFour()"><img src="images/bg-cellphone-4.jpg"
+                                                        class="changeBgOpt" id="bgImg4" alt=""></a>
+                                        <a href="#" onclick="bgFive()"><img src="images/bg-cellphone-5.jpg"
+                                                        class="changeBgOpt" id="bgImg5" alt=""></a>
+                                </div>
+                        </div>
+
+                        <!-- PROJECTS SCREEN -->
+                        <div class="projectsScreen background" id="projectsScreen">
+                                <a href="https://raphaaelj.github.io/Spotify-Landing-Page" target="_blank"><img
+                                                src="images/spotify.png" draggable="false"
+                                                alt="Imagem de Projeto Spotify"></a>
+                                <a href="https://raphaaelj.github.io/Starbucks-Landing-Page" target="_blank"><img
+                                                src="images/starbucks.png" draggable="false"
+                                                alt="Imagem de Projeto Starbucks"></a>
+                                <a href="https://raphaaelj.github.io/Finans-Landing-Page" target="_blank"><img
+                                                src="images/finans.png" draggable="false"
+                                                alt="Imagem de Projeto Finans"></a>
+                                <a href="https://raphaaelj.github.io/Calculator-App" target="_blank"><img
+                                                src="images/appCalculadora.png" draggable="false"
+                                                alt="Imagem de Projeto Calculadora"></a>
+                                <a href="https://raphaaelj.github.io/Spotify-Landing-Page" target="_blank"><img
+                                                src="images/spotify.png" draggable="false"
+                                                alt="Imagem de Projeto Spotify"></a>
+                                <a href="https://raphaaelj.github.io/Starbucks-Landing-Page" target="_blank"><img
+                                                src="images/starbucks.png" draggable="false"
+                                                alt="Imagem de Projeto Starbucks"></a>
+                                <a href="https://raphaaelj.github.io/Finans-Landing-Page" target="_blank"><img
+                                                src="images/finans.png" draggable="false"
+                                                alt="Imagem de Projeto Finans"></a>
+                                <a href="https://raphaaelj.github.io/Calculator-App" target="_blank"><img
+                                                src="images/appCalculadora.png" draggable="false"
+                                                alt="Imagem de Projeto Calculadora"></a>
+                                <a href="https://raphaaelj.github.io/Spotify-Landing-Page" target="_blank"><img
+                                                src="images/spotify.png" draggable="false"
+                                                alt="Imagem de Projeto Spotify"></a>
+                                <a href="https://raphaaelj.github.io/Starbucks-Landing-Page" target="_blank"><img
+                                                src="images/starbucks.png" draggable="false"
+                                                alt="Imagem de Projeto Starbucks"></a>
+                                <a href="https://raphaaelj.github.io/Finans-Landing-Page" target="_blank"><img
+                                                src="images/finans.png" draggable="false"
+                                                alt="Imagem de Projeto Finans"></a>
+                                <a href="https://raphaaelj.github.io/Calculator-App" target="_blank"><img
+                                                src="images/appCalculadora.png" draggable="false"
+                                                alt="Imagem de Projeto Calculadora"></a>
+                                <a href="https://raphaaelj.github.io/Spotify-Landing-Page" target="_blank"><img
+                                                src="images/spotify.png" draggable="false"
+                                                alt="Imagem de Projeto Spotify"></a>
+                                <a href="https://raphaaelj.github.io/Starbucks-Landing-Page" target="_blank"><img
+                                                src="images/starbucks.png" draggable="false"
+                                                alt="Imagem de Projeto Starbucks"></a>
+                                <a href="https://raphaaelj.github.io/Finans-Landing-Page" target="_blank"><img
+                                                src="images/finans.png" draggable="false"
+                                                alt="Imagem de Projeto Finans"></a>
+                                <a href="https://raphaaelj.github.io/Calculator-App" target="_blank"><img
+                                                src="images/appCalculadora.png" draggable="false"
+                                                alt="Imagem de Projeto Calculadora"></a>
+                        </div>
+
+                </div>
+                <a href="#firstScreen" class="celularButton" onclick="backFirstScreen()"></a>
         </div>
-        <a href="#" class="celularButton" onclick="backFirstScreen()"></a>
-    </div>
-    <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
