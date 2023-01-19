@@ -1,0 +1,41 @@
+.telaSobreMim {
+    position: relative;
+    box-shadow: 0px 0px 20px -5px rgba(255, 255, 255, .25) inset;
+
+    background-color: #3D7A77;
+
+    min-width: 250px;
+    width: 380px;
+    max-width: 556px;
+    
+    min-height: 556px;
+    height: 650px;
+    max-height: 680px;
+
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 5px;
+
+    padding: 0px 0px;
+}
+
+.telaSobreMim img {
+    width: 300px;
+    border-radius: 10em;
+    border: 2px ridge #5D5D5D;
+    margin-top: 5%;
+}
+
+.title {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.subtitle {
+    color: #9FC7C5;
+    font-style: italic;
+}
