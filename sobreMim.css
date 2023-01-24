@@ -1,11 +1,11 @@
 .telaSobreMim {
     position: relative;
-    box-shadow: 0px 0px 20px -5px rgba(255, 255, 255, .25) inset;
+    box-shadow: 0px 0px .5em 0px rgba(255, 255, 255, .25) inset;
 
     background-color: #3D7A77;
 
     min-width: 250px;
-    width: 380px;
+    width: 330px;
     max-width: 556px;
 
     min-height: 556px;

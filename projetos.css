@@ -1,9 +1,9 @@
 .projectsScreen {
     position: relative;
-    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, .25) inset;
+    box-shadow: 0px 0px .5em 0px rgba(255, 255, 255, .25) inset;
 
     min-width: 250px;
-    width: 380px;
+    width: 330px;
     max-width: 556px;
 
     min-height: 556px;
@@ -22,14 +22,14 @@
 }
 
 .projectsScreen a {
-    width: 330px;
-    height: 200px;
+    width: 300px;
+    height: 170px;
     margin: .2em 0;
 }
 
 .projectsScreen a img {
-    width: 330px;
-    height: 200px;
+    width: 300px;
+    height: 170px;
 
     object-fit: cover;
     border-radius: 1em 1em 1em 1em;

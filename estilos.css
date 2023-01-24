@@ -34,7 +34,7 @@ body {
 .celular {
     position: relative;
     flex-direction: row;
-    margin: 4% auto;
+    margin: 2% auto;
 
     display: flex;
     flex-direction: column;
@@ -42,11 +42,11 @@ body {
     align-items: center;
 
     min-width: 150px;
-    width: 400px;
+    width: 350px;
     max-width: 556px;
 
     min-height: 556px;
-    height: 800px;
+    height: 700px;
     max-height: 900px;
 
     border: 5px ridge #FF0000;
@@ -71,14 +71,16 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
+    height: 580px;
+    width: 330px;
 }
 
 .telaPrincipal {
     position: relative;
-    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, .25) inset;
+    box-shadow: 0px 0px .5em 0px rgba(255, 255, 255, .25) inset;
 
     min-width: 250px;
-    width: 380px;
+    width: 330px;
     max-width: 556px;
 
     min-height: 556px;
@@ -140,14 +142,14 @@ body {
 
 .celularButton {
     background-color: #000;
-    border: 2px outset #fff;
+    border: 1px outset #fff;
     border-radius: 50%;
 
     position: relative;
-    bottom: -365px;
+    bottom: -320px;
 
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .celularButton:active {
@@ -253,6 +255,9 @@ body {
 .celularCorCapa img {
     width: 50px;
     animation: giro 5s infinite 0ms linear;
+    -o-animation: giro 5s infinite 0ms linear;
+    -moz-animation: giro 5s infinite 0ms linear;
+    -webkit-animation: giro 5s infinite 0ms linear;
     border-radius: 50%;
     transition: transform .5s;
 }
