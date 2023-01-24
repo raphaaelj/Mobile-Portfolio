@@ -2,15 +2,20 @@
 @import url("gmail.css");
 @import url("ajustes.css");
 @import url("sobreMim.css");
+@import url("estilos.scss");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     user-select: none;
-    font-family: Helvetica, Arial,sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 500px;
     user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 body {
@@ -39,7 +44,7 @@ body {
     min-width: 150px;
     width: 400px;
     max-width: 556px;
-    
+
     min-height: 556px;
     height: 800px;
     max-height: 900px;
@@ -75,7 +80,7 @@ body {
     min-width: 250px;
     width: 380px;
     max-width: 556px;
-    
+
     min-height: 556px;
     height: 650px;
     max-height: 680px;
@@ -122,7 +127,8 @@ body {
     border-radius: 10px 10px 10px 10px;
 }
 
-#aboutMeImg, #githubImg {
+#aboutMeImg,
+#githubImg {
     filter: invert(1);
 }
 
@@ -161,7 +167,8 @@ body {
     padding: 5px;
 }
 
-.notBar { /* Notification Bar */
+.notBar {
+    /* Notification Bar */
     background: #191919;
     position: relative;
 
@@ -179,7 +186,8 @@ body {
     border-top-right-radius: 1%;
 }
 
-.watchTime { /* Notification Bar Watch */
+.watchTime {
+    /* Notification Bar Watch */
     font-weight: bold;
     color: #FFFFFF;
 }
@@ -187,7 +195,7 @@ body {
 .battery {
     width: 20px;
     height: 10px;
-    
+
 
     background: #00AA00;
     border: 1px solid #FFF;
@@ -222,7 +230,7 @@ body {
 
     width: 270px;
     right: -40px;
-    z-index:0;
+    z-index: 0;
 }
 
 
@@ -244,7 +252,40 @@ body {
 
 .celularCorCapa img {
     width: 50px;
+    animation: giro 5s infinite 0ms linear;
+    border-radius: 50%;
+    transition: transform .5s;
 }
+
+#capaRed {
+    filter: drop-shadow(0 0 1em rgba(255,0 ,0));
+    border: 1px solid rgba(255,0 ,0);
+}
+
+#capaBlue {
+    filter: drop-shadow(0 0 1em rgba(0, 0, 255));
+    border: 1px solid rgba(0, 0, 255);
+}
+
+#capaGreen {
+    filter: drop-shadow(0 0 1em rgba(0, 255, 0));
+    border: 1px solid rgba(0, 255, 0);
+}
+
+.celularCorCapa img:hover {
+    transform: scale(1.5);
+}
+
+@keyframes giro {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
 .celularCorCapaBt img {
     width: 49px;
     padding: 10px;

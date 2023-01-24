@@ -5,79 +5,74 @@
         <meta name="viewport" content="width=device-width">
         <meta charset="utf-8">
         <link rel="stylesheet" href="estilos.css">
-        <link rel="favicon" href="" type="favicon/icon">
-        <title>FrontEnd Dev| Raphael Oliveira</title>
+        <link rel="icon" href="icons/online-resume.ico" type="image/x-icon">
+        <title>Portfólio | FrontEnd Dev</title>
 </head>
 
 <body>
-        <div class="celular" id="celular">
+        <main class="celular" id="celular">
                 <div class="celularCapa" id="celularCapa">
                         <div class="celularOpcoesCores" id="celularOpcoesCores">
                                 <a href="#" class="celularCorCapa" onclick="changeBorder('#FF0000')"><img
-                                                src="images/redColor.png" alt=""></a>
+                                                src="images/redColor.png" id="capaRed" alt="Opção de borda Vermelha"></a>
                                 <a href="#" class="celularCorCapa" onclick="changeBorder('#0000FF')"><img
-                                                src="images/blueColor.png" alt=""></a>
+                                                src="images/blueColor.png" id="capaBlue" alt="Opção de borda Azul"></a>
                                 <a href="#" class="celularCorCapa" onclick="changeBorder('#00FF00')"><img
-                                                src="images/greenColor.png" alt=""></a>
+                                                src="images/greenColor.png" id="capaGreen" alt="Opção de borda Verde"></a>
                         </div>
                         <a href="#" class="celularCorCapaBt" id="celularCorCapaBt" onclick="openColorOption()"><img
                                         src="icons/right-arrow.png" alt=""></a>
                 </div>
 
                 <div class="celularTopo"></div>
-                <div class="celularTela">
+                <section class="celularTela">
                         <!-- BARRA DE NOTIFICAÇÃO -->
-                        <div class="notBar" id="notBar" onload="relogio()">
+                        <article class="notBar" id="notBar" onload="relogio()">
                                 <div class="watchTime" id="txt"></div>
                                 <div class="battery" id="battery"></div>
-                        </div>
-                        <!-- TELA PRINCIPAL -->
-                        <div class="telaPrincipal background" id="telaPrincipal">
+                        </article>
+                        <!-- PRINCIPAL -->
+                        <article class="telaPrincipal background" id="telaPrincipal">
                                 <div class="cellApp">
-                                        <a href="https://wa.me/+5521998323783" target="_blank" draggable="false"><img
-                                                        src="./icons/whatsapp.png" alt="Icone App do Whatsapp"
-                                                        draggable="false"></a>
+                                        <a href="https://wa.me/+5521998323783" target="_blank"><img
+                                                        src="./icons/whatsapp.png" alt="Icone App do Whatsapp"></a>
                                         <p id="app">Whatsapp</p>
                                 </div>
                                 <div class="cellApp">
-                                        <a href="#" draggable="false"
-                                                onclick="openAboutMe()"><img src="./icons/user.png" id="aboutMeImg"
-                                                        alt="Icone App Sobre Mim" draggable="false"></a>
+                                        <a href="#" onclick="openAboutMe()"><img src="./icons/user.png" id="aboutMeImg"
+                                                        alt="Icone App Sobre Mim"></a>
                                         <p id="app">Sobre Mim</p>
                                 </div>
                                 <div class="cellApp">
-                                        <a href="#Projects" draggable="false" onclick="openProjects()"><img
-                                                        src="./icons/coordinator.png" alt="Icone App dos meus Projetos"
-                                                        draggable="false"></a>
+                                        <a href="#Projects" onclick="openProjects()"><img src="./icons/coordinator.png"
+                                                        alt="Icone App dos meus Projetos"></a>
                                         <p id="app">Projetos</p>
                                 </div>
                                 <div class="cellApp">
-                                        <a href="#GmailApplication" draggable="false" onclick="openGmail()"><img
-                                                        src="./icons/gmail.png" alt="Icone App do Gmail" id="gmailImg"
-                                                        draggable="false"></a>
+                                        <a href="#GmailApplication" onclick="openGmail()"><img src="./icons/gmail.png"
+                                                        alt="Icone App do Gmail" id="gmailImg"></a>
                                         <p id="app">Gmail</p>
                                 </div>
                                 <div class="cellApp">
                                         <a href="https://www.linkedin.com/in/raphael-oliveira-97722b222/"
-                                                target="_blank" draggable="false"><img src="./icons/linkedin.png"
-                                                        alt="Icone App do LinkedIn" draggable="false"></a>
+                                                target="_blank"><img src="./icons/linkedin.png"
+                                                        alt="Icone App do LinkedIn"></a>
                                         <p id="app">LinkedIn</p>
                                 </div>
                                 <div class="cellApp">
-                                        <a href="https://www.github.com/raphaaelj" target="_blank"
-                                                draggable="false"><img src="./icons/github.png" id="githubImg"
-                                                        alt="Icone App do Github" draggable="false"></a>
+                                        <a href="https://www.github.com/raphaaelj" target="_blank"><img
+                                                        src="./icons/github.png" id="githubImg"
+                                                        alt="Icone App do Github"></a>
                                         <p id="app">Github</p>
                                 </div>
                                 <div class="cellApp">
-                                        <a href="#settingsApplication" draggable="false" onclick="openSettings()"><img
-                                                        src="./icons/settings.png" alt="Icone App dos Ajustes"
-                                                        draggable="false"></a>
+                                        <a href="#settingsApplication" onclick="openSettings()"><img
+                                                        src="./icons/settings.png" alt="Icone App dos Ajustes"></a>
                                         <p id="app">Ajustes</p>
                                 </div>
-                        </div>
-                        <!-- TELA GMAIL -->
-                        <div class="gmailScreen" id="gmailScreen">
+                        </article>
+                        <!-- GMAIL -->
+                        <article class="gmailScreen" id="gmailScreen">
                                 <header>
                                         <a href="#"><img src="icons/menu.png" alt=""></a>
                                         <p>Enviar mensagem</p>
@@ -95,16 +90,16 @@
                                                         id="btn-send-email" onclick="sendMail()">Enviar</button>
                                         </form>
                                 </div>
-                        </div>
-                        <!-- TELA AJUSTES -->
-                        <div class="settingsScreen" id="settingsScreen">
+                        </article>
+                        <!-- AJUSTES -->
+                        <article class="settingsScreen" id="settingsScreen">
                                 <ul class="settingsOptions">
                                         <a href="#ChangeBackground" class="sChangeBg" onclick="openBgChange()">Planos de
                                                 Fundo</a>
                                         <a href="#AudioSettings" class="sAudio">Áudio</a>
                                 </ul>
-                        </div>
-                        <div class="bgChangeScreen background" id="bgChangeScreen">
+                        </article>
+                        <article class="bgChangeScreen background" id="bgChangeScreen">
                                 <a href="#" onclick="closeBgChange()" class="btnCloseBgChange">
                                         <img src="icons/left-arrow.png" alt="">
                                         <span>Voltar</span>
@@ -121,32 +116,53 @@
                                         <a href="#" onclick="bgFive()"><img src="images/bg-cellphone-5.jpg"
                                                         class="changeBgOpt" id="bgImg5" alt=""></a>
                                 </div>
-                        </div>
-                        <!-- TELA PROJETOS -->
-                        <div class="projectsScreen background" id="projectsScreen">
+                        </article>
+                        <!-- PROJETOS -->
+                        <article class="projectsScreen background" id="projectsScreen">
                                 <a href="https://raphaaelj.github.io/Spotify-Landing-Page" target="_blank"><img
-                                                src="images/spotify.png" draggable="false"
-                                                alt="Imagem de Projeto Spotify"></a>
+                                                src="images/spotify.png" alt="Imagem de Projeto Spotify"></a>
                                 <a href="https://raphaaelj.github.io/Starbucks-Landing-Page" target="_blank"><img
-                                                src="images/starbucks.png" draggable="false"
-                                                alt="Imagem de Projeto Starbucks"></a>
+                                                src="images/starbucks.png" alt="Imagem de Projeto Starbucks"></a>
                                 <a href="https://raphaaelj.github.io/Finans-Landing-Page" target="_blank"><img
-                                                src="images/finans.png" draggable="false"
-                                                alt="Imagem de Projeto Finans"></a>
+                                                src="images/finans.png" alt="Imagem de Projeto Finans"></a>
                                 <a href="https://raphaaelj.github.io/Calculator-App" target="_blank"><img
-                                                src="images/appCalculadora.png" draggable="false"
-                                                alt="Imagem de Projeto Calculadora"></a>
-                        </div>
-                        <!-- TELA SOBRE MIM -->
-                        <div class="telaSobreMim" id="telaSobreMim">
-                                <img src="images/3x4.jpg" class="fotoPerfil" alt="">
-                                <h1 class="title">Olá, sou Raphael Oliveira.</h1>
-                                <h6 class="subtitle">Desenvolvedor Front-End!</h6>
-                        </div>
-                </div>
+                                                src="images/appCalculadora.png" alt="Imagem de Projeto Calculadora"></a>
+                        </article>
+                        <!-- SOBRE MIM -->
+                        <article class="telaSobreMim" id="telaSobreMim">
+                                <section class="sobreMim">
+                                        <header class="sobreMimTopo">
+                                                <img src="images/3x4.jpg" class="fotoPerfil" alt="">
+                                                <h1 class="title">Olá, sou Raphael Oliveira.</h1>
+                                                <h6 class="subtitle">Desenvolvedor Front-End!</h6>
+                                        </header>
+                                        <article class="sobreMimCorpo">
+                                                <h1>Conhecimentos:</h1>
+                                                <!-- <div class="dashboard">
+                                                        <svg>
+                                                                <circle class="bg" cx="57" cy="57" r="52" />
+                                                                <circle class="meter-1" cx="57" cy="57" r="52" />
+                                                        </svg>
+                                                        <svg>
+                                                                <circle class="bg" cx="57" cy="57" r="52" />
+                                                                <circle class="meter-2" cx="57" cy="57" r="52" />
+                                                        </svg>
+                                                        <svg>
+                                                                <circle class="bg" cx="57" cy="57" r="52" />
+                                                                <circle class="meter-3" cx="57" cy="57" r="52" />
+                                                        </svg>
+                                                </div> -->
+                                        </article>
+                                        <footer>
+                                                
+                                        </footer>
+                                </section>
+                        </article>
+                </section>
                 <a href="#telaPrincipal" class="celularButton" onclick="voltarTelaPrincipal()"></a>
-        </div>
+        </main>
         <script type="text/javascript" src="script.js"></script>
+        </script>
 </body>
 
 </html>

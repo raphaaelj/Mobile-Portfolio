@@ -1,4 +1,3 @@
-
 //Relógio
 function relogio() {
     var today = new Date();
