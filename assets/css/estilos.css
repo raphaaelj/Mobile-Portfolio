@@ -1,0 +1,368 @@
+/* Outros estilos */
+@import url("projetos.css");
+@import url("gmail.css");
+@import url("ajustes.css");
+@import url("sobreMim.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: #1d1d1d;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+}
+
+
+/* MOBILE BACKGROUND */
+.background {
+    background: url('../images/bg-cellphone-1.jpg') #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.celular {
+    position: relative;
+    flex-direction: row;
+    margin: 2% auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 700px;
+
+    border: 5px ridge #FF0000;
+    border-radius: 3em;
+    background-color: #000;
+    z-index: 3;
+}
+
+.celularTopo {
+    position: absolute;
+    top: 5%;
+
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    background-color: #191919;
+
+    width: 30%;
+    height: 1%;
+}
+
+.celularTela {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 98%;
+    overflow-y: auto;
+}
+
+.screen {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    box-shadow: 0px 0px .5em 0px rgba(255, 255, 255, .25) inset;
+}
+
+.telaPrincipal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    gap: 15px;
+
+    padding: 10px 10px;
+}
+
+.telaPrincipal:hover {
+    cursor: grab;
+}
+
+.telaPrincipal:active {
+    cursor: grabbing;
+}
+
+.cellApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+
+    width: 20%;
+
+    color: #FFFFFF;
+}
+
+.cellApp p {
+    font-size: 80%;
+    font-weight: 500;
+}
+
+.cellApp img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px 10px 10px 10px;
+}
+
+#aboutMeImg,
+#githubImg {
+    filter: invert(1);
+}
+
+
+.cellApp #gmailImg {
+    background: #FFF;
+    border-radius: 20%;
+}
+
+.celularButton {
+    background-color: #000;
+    border: 1px outset #fff;
+    border-radius: 50%;
+
+    position: relative;
+    bottom: -45%;
+
+    width: 14%;
+    height: 7%;
+}
+
+.celularButton:active {
+    border: 3px inset #fff;
+}
+
+.changeBorder {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+
+    background: red;
+    color: #FFF;
+    font-weight: 800;
+
+    border-radius: 1em 1em 1em 1em;
+    padding: 5px;
+}
+
+.notBar {
+    /* Notification Bar */
+    background: #191919;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 3%;
+    padding: 0 10px;
+
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+}
+
+.watchTime {
+    /* Notification Bar Watch */
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.battery {
+    width: 20px;
+    height: 10px;
+
+
+    background: #00AA00;
+    border: 1px solid #FFF;
+}
+
+.celularCapa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    position: absolute;
+    right: -37px;
+
+    transition: right 0.5s linear;
+}
+
+#celularCapa.show {
+    right: -130px;
+}
+
+
+.celularOpcoesCores {
+    position: relative;
+    background-color: #2d2d2d;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    align-content: flex-start;
+    justify-content: flex-start;
+
+    width: 100px;
+    right: 0;
+    gap: 15px;
+}
+
+
+.celularCorCapa {
+    width: 100px;
+    border-radius: 5em;
+    padding: 0px 0px;
+    display: flex;
+    place-content: center;
+}
+
+.celularCorCapa img {
+    width: 50px;
+    animation: giro 5s infinite 0ms linear;
+    -o-animation: giro 5s infinite 0ms linear;
+    -moz-animation: giro 5s infinite 0ms linear;
+    -webkit-animation: giro 5s infinite 0ms linear;
+    border-radius: 50%;
+    transition: transform .5s;
+}
+
+#capaRed {
+    filter: drop-shadow(0 0 1em rgba(255,0 ,0));
+    border: 1px solid rgba(255,0 ,0);
+}
+
+#capaBlue {
+    filter: drop-shadow(0 0 1em rgba(0, 0, 255));
+    border: 1px solid rgba(0, 0, 255);
+}
+
+#capaGreen {
+    filter: drop-shadow(0 0 1em rgba(0, 255, 0));
+    border: 1px solid rgba(0, 255, 0);
+}
+
+.celularCorCapa img:hover {
+    transform: scale(1.5);
+}
+
+.celularCorCapaBt {
+    position: relative;
+    right: 0px;
+    top: 0px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 0 1em 1em 0;
+
+    width: 40px;
+    height: 180px;
+
+    background-color: #a19c9c;
+}
+
+.celularCorCapaBt img {
+    width: 50px;
+    padding: 10px;
+    border-radius: 0 2em 2em 0;
+}
+
+@keyframes giro {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+/* Media queries */
+@media screen and (max-height: 579px) {
+    .celular {
+        width: 260px;
+        height: 500px;
+    }
+}
+
+@media screen and (min-height: 580px) and (max-height: 712px) {
+    .celular {
+        width: 300px;
+        height: 580px;
+    }
+
+}
+
+@media screen and (min-height: 713px) and (max-height: 800px) {
+    .celular {
+        width: 340px;
+        height: 680px;
+        border-radius: 4em;
+    }
+}
+
+@media screen and (min-height: 801px) and (max-height: 851px) {
+    .celular {
+        width: 400px;
+        height: 780px;
+        border-radius: 4.5em;
+    }
+}
+
+@media screen and (min-height: 852px) and (max-height: 901px) {
+    .celular {
+        width: 420px;
+        height: 810px;
+        border-radius: 4.5em;
+    }
+}
+
+@media screen and (min-height: 902px) {
+    .celular {
+        width: 420px;
+        height: 810px;
+        border-radius: 4.5em;
+    }
+}

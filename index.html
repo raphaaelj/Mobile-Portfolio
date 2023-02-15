@@ -2,10 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width" initial-scale="1">
         <meta charset="utf-8">
-        <link rel="stylesheet" href="estilos.css">
-        <link rel="icon" href="icons/online-resume.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+                integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/estilos.css">
+        <link rel="icon" href="assets/icons/online-resume.ico" type="image/x-icon">
         <title>Portfólio | FrontEnd Dev</title>
 </head>
 
@@ -14,14 +17,17 @@
                 <div class="celularCapa" id="celularCapa">
                         <div class="celularOpcoesCores" id="celularOpcoesCores">
                                 <a href="#" class="celularCorCapa" onclick="changeBorder('#FF0000')"><img
-                                                src="images/redColor.png" id="capaRed" alt="Opção de borda Vermelha"></a>
+                                                src="assets/images/redColor.png" id="capaRed"
+                                                alt="Opção de borda Vermelha"></a>
                                 <a href="#" class="celularCorCapa" onclick="changeBorder('#0000FF')"><img
-                                                src="images/blueColor.png" id="capaBlue" alt="Opção de borda Azul"></a>
+                                                src="assets/images/blueColor.png" id="capaBlue"
+                                                alt="Opção de borda Azul"></a>
                                 <a href="#" class="celularCorCapa" onclick="changeBorder('#00FF00')"><img
-                                                src="images/greenColor.png" id="capaGreen" alt="Opção de borda Verde"></a>
+                                                src="assets/images/greenColor.png" id="capaGreen"
+                                                alt="Opção de borda Verde"></a>
                         </div>
                         <a href="#" class="celularCorCapaBt" id="celularCorCapaBt" onclick="openColorOption()"><img
-                                        src="icons/right-arrow.png" alt=""></a>
+                                        src="assets/icons/right-arrow.png" alt=""></a>
                 </div>
 
                 <div class="celularTopo"></div>
@@ -32,49 +38,51 @@
                                 <div class="battery" id="battery"></div>
                         </article>
                         <!-- PRINCIPAL -->
-                        <article class="telaPrincipal background" id="telaPrincipal">
+                        <article class="telaPrincipal screen background" id="telaPrincipal">
                                 <div class="cellApp">
                                         <a href="https://wa.me/+5521998323783" target="_blank"><img
-                                                        src="./icons/whatsapp.png" alt="Icone App do Whatsapp"></a>
+                                                        src="assets/icons/whatsapp.png" alt="Icone App do Whatsapp"></a>
                                         <p id="app">Whatsapp</p>
                                 </div>
                                 <div class="cellApp">
-                                        <a href="#" onclick="openAboutMe()"><img src="./icons/user.png" id="aboutMeImg"
-                                                        alt="Icone App Sobre Mim"></a>
+                                        <a href="#" onclick="openAboutMe()"><img src="assets/icons/user.png"
+                                                        id="aboutMeImg" alt="Icone App Sobre Mim"></a>
                                         <p id="app">Sobre Mim</p>
                                 </div>
                                 <div class="cellApp">
-                                        <a href="#Projects" onclick="openProjects()"><img src="./icons/coordinator.png"
+                                        <a href="#Projects" onclick="openProjects()"><img
+                                                        src="assets/icons/coordinator.png"
                                                         alt="Icone App dos meus Projetos"></a>
                                         <p id="app">Projetos</p>
                                 </div>
                                 <div class="cellApp">
-                                        <a href="#GmailApplication" onclick="openGmail()"><img src="./icons/gmail.png"
-                                                        alt="Icone App do Gmail" id="gmailImg"></a>
+                                        <a href="#GmailApplication" onclick="openGmail()"><img
+                                                        src="assets/icons/gmail.png" alt="Icone App do Gmail"
+                                                        id="gmailImg"></a>
                                         <p id="app">Gmail</p>
                                 </div>
                                 <div class="cellApp">
                                         <a href="https://www.linkedin.com/in/raphael-oliveira-97722b222/"
-                                                target="_blank"><img src="./icons/linkedin.png"
+                                                target="_blank"><img src="assets/icons/linkedin.png"
                                                         alt="Icone App do LinkedIn"></a>
                                         <p id="app">LinkedIn</p>
                                 </div>
                                 <div class="cellApp">
                                         <a href="https://www.github.com/raphaaelj" target="_blank"><img
-                                                        src="./icons/github.png" id="githubImg"
+                                                        src="assets/icons/github.png" id="githubImg"
                                                         alt="Icone App do Github"></a>
                                         <p id="app">Github</p>
                                 </div>
                                 <div class="cellApp">
                                         <a href="#settingsApplication" onclick="openSettings()"><img
-                                                        src="./icons/settings.png" alt="Icone App dos Ajustes"></a>
+                                                        src="assets/icons/settings.png" alt="Icone App dos Ajustes"></a>
                                         <p id="app">Ajustes</p>
                                 </div>
                         </article>
                         <!-- GMAIL -->
-                        <article class="gmailScreen" id="gmailScreen">
+                        <article class="gmailScreen screen" id="gmailScreen">
                                 <header>
-                                        <a href="#"><img src="icons/menu.png" alt=""></a>
+                                        <a href="#"><img src="assets/icons/menu.png" alt=""></a>
                                         <p>Enviar mensagem</p>
                                 </header>
                                 <div class="gmailBody">
@@ -92,76 +100,135 @@
                                 </div>
                         </article>
                         <!-- AJUSTES -->
-                        <article class="settingsScreen" id="settingsScreen">
+                        <article class="settingsScreen screen" id="settingsScreen">
                                 <ul class="settingsOptions">
-                                        <a href="#ChangeBackground" class="sChangeBg" onclick="openBgChange()">Planos de
+                                        <a href="#ChangeBackground" class="sChangeBg" onclick="openBgChangeSc()">Planos
+                                                de
                                                 Fundo</a>
                                         <a href="#AudioSettings" class="sAudio">Áudio</a>
                                 </ul>
                         </article>
-                        <article class="bgChangeScreen background" id="bgChangeScreen">
-                                <a href="#" onclick="closeBgChange()" class="btnCloseBgChange">
-                                        <img src="icons/left-arrow.png" alt="">
+                        <article class="bgChangeScreen screen background" id="bgChangeScreen">
+                                <a href="#" onclick="closeBgChangeSc()" class="btnCloseBgChange">
+                                        <img src="assets/icons/left-arrow.png" alt="">
                                         <span>Voltar</span>
                                 </a>
                                 <div class="bgImgs">
-                                        <a href="#" onclick="bgOne()"><img src="images/bg-cellphone-1.jpg"
-                                                        class="changeBgOpt" id="bgImg1" alt=""></a>
-                                        <a href="#" onclick="bgTwo()"><img src="images/bg-cellphone-2.jpg"
-                                                        class="changeBgOpt" id="bgImg2" alt=""></a>
-                                        <a href="#" onclick="bgThree()"><img src="images/bg-cellphone-3.jpg"
-                                                        class="changeBgOpt" id="bgImg3" alt=""></a>
-                                        <a href="#" onclick="bgFour()"><img src="images/bg-cellphone-4.jpg"
-                                                        class="changeBgOpt" id="bgImg4" alt=""></a>
-                                        <a href="#" onclick="bgFive()"><img src="images/bg-cellphone-5.jpg"
-                                                        class="changeBgOpt" id="bgImg5" alt=""></a>
+                                        <a href="#" onclick="bgChange('assets/images/bg-cellphone-1.jpg')"><img
+                                                        src="assets/images/bg-cellphone-1.jpg" class="changeBgOpt"
+                                                        id="bgImg1" alt=""></a>
+                                        <a href="#" onclick="bgChange('assets/images/bg-cellphone-2.jpg')"><img
+                                                        src="assets/images/bg-cellphone-2.jpg" class="changeBgOpt"
+                                                        id="bgImg2" alt=""></a>
+                                        <a href="#" onclick="bgChange('assets/images/bg-cellphone-3.jpg')"><img
+                                                        src="assets/images/bg-cellphone-3.jpg" class="changeBgOpt"
+                                                        id="bgImg3" alt=""></a>
+                                        <a href="#" onclick="bgChange('assets/images/bg-cellphone-4.jpg')"><img
+                                                        src="assets/images/bg-cellphone-4.jpg" class="changeBgOpt"
+                                                        id="bgImg4" alt=""></a>
+                                        <a href="#" onclick="bgChange('assets/images/bg-cellphone-5.jpg')"><img
+                                                        src="assets/images/bg-cellphone-5.jpg" class="changeBgOpt"
+                                                        id="bgImg5" alt=""></a>
                                 </div>
                         </article>
                         <!-- PROJETOS -->
-                        <article class="projectsScreen background" id="projectsScreen">
-                                <a href="https://raphaaelj.github.io/Spotify-Landing-Page" target="_blank"><img
-                                                src="images/spotify.png" alt="Imagem de Projeto Spotify"></a>
-                                <a href="https://raphaaelj.github.io/Starbucks-Landing-Page" target="_blank"><img
-                                                src="images/starbucks.png" alt="Imagem de Projeto Starbucks"></a>
-                                <a href="https://raphaaelj.github.io/Finans-Landing-Page" target="_blank"><img
-                                                src="images/finans.png" alt="Imagem de Projeto Finans"></a>
-                                <a href="https://raphaaelj.github.io/Calculator-App" target="_blank"><img
-                                                src="images/appCalculadora.png" alt="Imagem de Projeto Calculadora"></a>
+                        <article class="projectsScreen screen background" id="projectsScreen">
+                                <a href="https://raphaaelj.github.io/GAME-Mata-Mosquito" target="_blank">
+                                        <img src="assets/images/gameMataMosquito.png"
+                                                alt="Imagem de Projeto Calculadora" class="border border-light">
+                                </a>
+                                <a href="https://raphaaelj.github.io/Spotify-Landing-Page" target="_blank">
+                                        <img src="assets/images/spotify.png" alt="Imagem de Projeto Spotify"
+                                                class="border border-light">
+                                </a>
+                                <a href="https://raphaaelj.github.io/Starbucks-Landing-Page" target="_blank">
+                                        <img src="assets/images/starbucks.png" alt="Imagem de Projeto Starbucks"
+                                                class="border border-light">
+                                </a>
+                                <a href="https://raphaaelj.github.io/Finans-Landing-Page" target="_blank">
+                                        <img src="assets/images/finans.png" alt="Imagem de Projeto Finans"
+                                                class="border border-light">
+                                </a>
+                                <a href="https://raphaaelj.github.io/Calculator-App" target="_blank">
+                                        <img src="assets/images/appCalculadora.png" alt="Imagem de Projeto Calculadora"
+                                                class="border border-light">
+                                </a>
+                                <a href="https://raphaaelj.github.io/Stopwatch" target="_blank">
+                                        <img src="assets/images/appCronometro.png" alt="Imagem de Projeto Cronômetro"
+                                                class="border border-light">
+                                </a>
+                                <p class="projectTools descricaoProjeto"></p>
                         </article>
                         <!-- SOBRE MIM -->
-                        <article class="telaSobreMim" id="telaSobreMim">
+                        <article class="telaSobreMim screen" id="telaSobreMim">
                                 <section class="sobreMim">
-                                        <header class="sobreMimTopo">
-                                                <img src="images/3x4.jpg" class="fotoPerfil" alt="">
-                                                <h1 class="title">Olá, sou Raphael Oliveira.</h1>
-                                                <h6 class="subtitle">Desenvolvedor Front-End!</h6>
+                                        <header class="sobreMimTopo mb-5">
+                                                <img src="assets/images/3x4.jpg" class="fotoPerfil mt-2 mb-2" alt="">
+                                                <h1 class="title">Olá, sou o <span id="titleNome">Raphael
+                                                                Oliveira</span>.</h1>
+                                                <small class="subtitle">Desenvolvedor Front-End :)</small>
                                         </header>
                                         <article class="sobreMimCorpo">
-                                                <h1>Conhecimentos:</h1>
-                                                <!-- <div class="dashboard">
-                                                        <svg>
-                                                                <circle class="bg" cx="57" cy="57" r="52" />
-                                                                <circle class="meter-1" cx="57" cy="57" r="52" />
-                                                        </svg>
-                                                        <svg>
-                                                                <circle class="bg" cx="57" cy="57" r="52" />
-                                                                <circle class="meter-2" cx="57" cy="57" r="52" />
-                                                        </svg>
-                                                        <svg>
-                                                                <circle class="bg" cx="57" cy="57" r="52" />
-                                                                <circle class="meter-3" cx="57" cy="57" r="52" />
-                                                        </svg>
-                                                </div> -->
+                                                <div class="ferramentasSobreMim d-flex flex-column align-items-center">
+                                                        <p class="title mb-0">
+                                                                Ferramentas
+                                                        </p>
+                                                        <div class="cards mb-5">
+                                                                <div class="box">
+                                                                        <p>HTML 5</p>
+                                                                        <img class="w-25 d-flex mx-auto"
+                                                                                src="assets/icons/html.svg" alt="">
+                                                                </div>
+                                                                <div class="box">
+                                                                        <p>CSS 3</p>
+                                                                        <img class="w-25 d-flex mx-auto"
+                                                                                src="assets/icons/css.svg" alt="">
+                                                                </div>
+                                                                <div class="box">
+                                                                        <p>Bootstrap</p>
+                                                                        <img class="w-25 d-flex mx-auto"
+                                                                                src="assets/icons/bootstrap.svg" alt="">
+                                                                </div>
+                                                                <div class="box">
+                                                                        <p>JavaScript</p>
+                                                                        <img class="w-25 d-flex mx-auto"
+                                                                                src="assets/icons/javascript.svg"
+                                                                                alt="">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div
+                                                        class="textoSobreMim d-flex flex-column align-items-center mx-4 mb-5">
+                                                        <p class="title mb-0">Sobre mim</p>
+                                                        <p class="textoSobreMimDescricao text-light">
+                                                                Desenvolvedor Front End com experiência em <kbd>HTML,
+                                                                        CSS,
+                                                                        Bootstrap e JavaScript (ES6)</kbd>. Fascinado
+                                                                por Tecnologia da
+                                                                Informação e desenvolvimento, cursando faculdade na área
+                                                                de Gestão de TI e também curso de Desenvolvimento Web
+                                                                Completo na Udemy.
+                                                        </p>
+                                                </div>
                                         </article>
                                         <footer>
-                                                
+
                                         </footer>
                                 </section>
                         </article>
                 </section>
-                <a href="#telaPrincipal" class="celularButton" onclick="voltarTelaPrincipal()"></a>
+                <a href="#" class="celularButton" onclick="voltarTelaPrincipal()"></a>
         </main>
-        <script type="text/javascript" src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
         </script>
 </body>
 

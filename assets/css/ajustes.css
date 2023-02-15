@@ -1,0 +1,89 @@
+.settingsScreen {
+    background-color: #000;
+
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    gap: 15px;
+
+    padding: 0px 0px;
+}
+
+.settingsOptions {
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+
+    width: 100%;
+}
+
+.settingsOptions a {
+    padding: 20px 5px;
+
+    text-decoration: none;
+    color: #fff;
+}
+
+.settingsOptions a:hover {
+    border-left: 1px outset #fff;;
+}
+
+.settingsOptions a:active {
+    border-left: 1px inset #fff;
+}
+
+
+
+/* BACKGROUND IMAGES */
+
+.bgChangeScreen {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    gap: 10px;
+    padding: 10px 5px 5px 5px;
+
+    overflow-y: auto;
+}
+.btnCloseBgChange {
+    font-size: .7rem;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    
+    display: flex;
+    align-items: center;
+}
+.btnCloseBgChange img {
+    width: 20px;
+    padding: 0 10px 0 0;
+    filter: invert(1);
+}
+
+.bgImgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 2px;
+
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: stretch;
+}
+
+.bgImgs a {
+    width: 24%;
+    border: 1px solid #9e9e9e;
+}
+
+.bgImgs a img {
+    width: 100%;
+    height: 100%;
+}
